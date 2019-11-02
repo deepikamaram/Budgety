@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budgety</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="top">
+        <div class="budget">
+            <div class="budget__head">
+                <div class="budget__head--month">October 2019</div>
+                <div class="budget__head--value">+ 2,034.64</div>
+                <div class="budget__head--title">Available Budget</div>
+            </div>
+            
+        <div class="budget__card">
+                <div class="budget__income">
+                        <div class="budget__income--text">Total Income</div>
+                     <span class="budget__income--card"> 
+                        <div class="budget__income--value">+ 4,000.00</div>
+                        <div class="budget__income--icon-bar">
+                                <ion-icon ios="ios-stats" md="md-stats"></ion-icon>
+                        </div>
+                        <div class="budget__income--percentage">&nbsp</div>
+                    </span>  
+                    </div>
+
+                    <ion-icon name="trash" class="budget__trash"></ion-icon>
+        
+                    <div class="budget__expense">
+                            <div class="budget__expense--text">Total Expense</div>
+                        <span class="budget__expense--card"> 
+                            <div class="budget__expense--value">- 3,000.00</div>
+                            <div class="budget__expense--icon-bar">
+                                    <ion-icon ios="ios-stats" md="md-stats"></ion-icon>
+                            </div>
+                        </span>
+                            <div class="budget__expense--percentage">40%</div>
+                </div>
+        </div>
+            
+        </div>
+
+        
+    </div>
+
+
+
+    <div class="bottom">
+        <div class="add">
+            <div class="add__container">
+             
+                <div class="add__container--type">
+                        <div class="toggle">
+                                <input type="checkbox" id="toggle" class="input__toggle" />
+                                <label for="toggle" class="label"></label>
+                        </div>
+                        
+                </div>
+                
+
+                <input type="text" class="add__description" placeholder="Add description">
+                <input type="number" class="add__value" placeholder="Value">
+
+                <button class="add__btn"><ion-icon name="checkmark-circle" ></ion-icon></button> 
+              </div>      
+
+                    
+            
+        </div>
+
+        <div class="container">                    
+                    <div class="panel">
+                         <!-- <div class="panel__item panel__item-income" id="income-0">
+                            <div class="panel__item__description">
+                                    <div class="panel__item__description-name">Salary</div>
+                            </div>
+                            <ion-icon name="trending-up" class="panel__item__trending"></ion-icon>
+                            <div class="panel__item__value">
+                                <div class="panel__item__value-num">- 2,100.00
+                                </div>
+                                <div class="panel__item__value-percentage panel__item__income-percentage">113%</div>
+                            </div>
+
+                            <button class="panel__item__delete-income">
+                                    <ion-icon name="close-circle-outline"></ion-icon>
+                            </button> 
+                        </div> 
+                     -->
+<!-- 
+                    <div class="panel__item panel__item-expense" id="expense-0">
+                            <div class="panel__item__description">
+                                    <div class="panel__item__description-name">Rent</div>
+                            </div>
+                            <ion-icon name="trending-down" class="panel__item__trending"></ion-icon>
+                            <div class="panel__item__value">
+                                    <div class="panel__item__value-num">- 2,100.00
+                                    </div>
+                                    <div class="panel__item__value-percentage">113%</div>
+                            </div>
+
+                            <button class="panel__item__delete-expense">
+                                    <ion-icon name="close-circle-outline"></ion-icon>
+                            </button> 
+                        
+                    </div>  -->
+
+                </div>
+        </div>
+            
+
+      </div>  
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
+    <script src="apps.js"></script>    
+
+   </body>
+</html>
+
+
+<!--<div class="panel__item__value-percentage panel__item__income-percentage">113%</div>-->
