@@ -28,7 +28,7 @@ $color-grey-dark-2: #414345;
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 42.5%; }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -215,8 +215,8 @@ body {
   position: relative;
   display: inline-block;
   margin-bottom: -1rem;
-  width: 4.3rem;
-  height: 4.3rem;
+  width: 5.3rem;
+  height: 5.3rem;
   background-color: var(--color-primary-light-2);
   border-radius: 20px;
   cursor: pointer;
@@ -229,7 +229,7 @@ body {
     top: 50%;
     left: 50%;
     height: 10px;
-    width: 42px;
+    width: 38px;
     transform: translate(-50%, -50%);
     transition: width 0.2s cubic-bezier(0, -1.85, 0.27, 1.75);
     background-color: var(--color-primary-light-2);
@@ -245,8 +245,8 @@ body {
     transition: width 0.2s cubic-bezier(0, -1.85, 0.27, 1.75);
     z-index: 9;
     background-color: var(--color-primary-light-2);
-    height: 42px;
-    width: 11px;
+    height: 38px;
+    width: 10px;
     border-radius: 3px;
     box-shadow: inset 0px 0px 0px 8px #fff; }
 
