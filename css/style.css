@@ -28,9 +28,22 @@ $color-grey-dark-2: #414345;
 
 html {
   box-sizing: border-box;
-  font-size: 42.5%; 
-  
+  font-size: 62.5%; 
 }
+
+@media only screen and (max-width: 70em) {
+  html {
+    font-size: 42.5%; 
+ }
+}
+
+@media only screen and (max-width: 70em) {
+  html {
+    font-size: 37.5%; 
+ }
+}
+
+
 
 
 
@@ -76,8 +89,20 @@ body {
       width: 100%;
   } }
 
+ 
+
+  
+
+
+
 .bottom {
   margin-top: 6rem; }
+
+  @media only screen and (max-width: 40em) {
+    .bottom{
+      margin-top: 4rem; 
+    }
+  }
 
 .add__container {
   margin: 0 10rem;
@@ -89,11 +114,23 @@ body {
     .add__container {
       flex-wrap: wrap;
     } }
+  
+    @media only screen and (max-width: 40em) {
+      .add__container {
+        margin: 0 0rem;
+      } }
 
 .container {
   display: flex;
   flex-direction: column;
   margin: 11rem; }
+
+  @media only screen and (max-width: 40em) {
+    .container{
+      margin-top: 6rem;
+      margin: 6rem 2rem 3rem 2rem;
+    }
+  }
 
 .budget__trash {
   color: white;
@@ -134,6 +171,8 @@ body {
      }
     }
 
+   
+
 .budget__income,
 .budget__expense {
   background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light)); }
@@ -148,6 +187,35 @@ body {
 .budget__income {
   border-radius: 5px;
   padding: 1rem 2rem; }
+
+  @media only screen and (max-width: 40em) {
+    .budget__expense,
+.budget__income {
+  padding: 1rem 1rem;
+  } 
+
+  .budget__income--text,
+.budget__expense--text {
+  font-size: 1rem;
+  padding-bottom: .5rem; }
+
+  .budget__income--icon-bar,
+.budget__expense--icon-bar {
+  display: none;
+}
+
+.budget__income--value,
+.budget__expense--value {
+  padding-bottom: .7rem;
+  font-size: 1.5rem;
+  min-width: 8.5rem; 
+}
+
+.budget__income--value {
+  margin-right: 1.7rem;
+}
+
+}
 
 .budget__income--text,
 .budget__expense--text {
@@ -201,6 +269,12 @@ body {
        border-bottom: 2px solid var(--color-primary-light-2);
     } } 
 
+    @media only screen and (max-width: 40em) {
+      .add__description {
+         width: 50%;
+         border-bottom: 1px solid var(--color-primary-light-2);
+      } } 
+
 .add__value {
   width: 15%;
   border-bottom: 5px solid var(--color-primary-light-2); }
@@ -211,6 +285,12 @@ body {
       width: 60%;
       border-bottom: 2px solid var(--color-primary-light-2);
     } } 
+
+    @media only screen and (max-width: 40em) {
+      .add__value {
+         width: 40%;
+         border-bottom: 1px solid var(--color-primary-light-2);
+      } } 
 
 .add__btn {
   background-color: transparent;
@@ -226,6 +306,11 @@ body {
     margin-bottom: -4rem; 
    margin-right: -14rem;
   } }
+
+  @media only screen and (max-width: 40em) {
+    .add__btn {
+      margin-right: -10rem;
+    } } 
 
 .add__container--type {
   position: relative; }
@@ -397,6 +482,12 @@ body {
       margin-right: 2rem; 
     }
   }
+
+
+  @media only screen and (max-width: 40em) {
+    .panel__item__description {
+      
+    }
 
 .panel__item-expense {
   /* background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary)); */
