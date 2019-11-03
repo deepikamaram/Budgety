@@ -7,3 +7,10 @@ This is a Project inspired from Javascript course by Jonas in Udemy
 - Added a button to clear entire data at once from localstorage and UI
 
 check it here: https://thewebdevworld.github.io/Budgety/
+
+
+Instructions:
+
+![Test Image 1](3.png)
+![Test Image 2](2.png)
+![Test Image 3](1.png)
