@@ -54,6 +54,15 @@ var budgetController = (function() {
         data.totals[type] = sum;
     };
 
+    var clearData = function(obj) {
+        data.allItems.exp = [];
+        data.allItems.inc= [];
+        data.totals.exp = 0;
+        data.totals.inc= 0;
+        data.budget= 0;
+        data.percentage= -1;
+    }
+
     
 
     return {
@@ -163,19 +172,16 @@ var budgetController = (function() {
             localStorage.removeItem('data');
         },
 
+        getData: function() {
+             clearData(data);
+        },
+
         test: function () { 
             console.log(data);
          }
 
-        
-
-
-
     };
 
-  
-
-    
 }());
 
 
@@ -502,6 +508,8 @@ var controller = (function(budgetCtrl, UICtrl) {
             while(el.firstChild) {
                 el.removeChild(el.firstChild);
             }
+
+           budgetController.getData();
 
             // 5. Display budget
              UICtrl.displayBudget({
