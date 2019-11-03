@@ -484,10 +484,6 @@ body {
   }
 
 
-  @media only screen and (max-width: 40em) {
-    .panel__item__description {
-      
-    }
 
 .panel__item-expense {
   /* background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary)); */
@@ -512,3 +508,4 @@ body {
     .add__value-red {
       border-bottom: 2px solid #f7717a; }
   }
+  
