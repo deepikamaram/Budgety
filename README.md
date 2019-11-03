@@ -8,3 +8,8 @@ This is a Project inspired from Javascript course by Jonas in Udemy
 
 
 check it here: https://thewebdevworld.github.io/Budgety/
+
+
+Instructions:
+
+![Test Image 1](1.png)
