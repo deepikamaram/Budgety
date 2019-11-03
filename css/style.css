@@ -28,7 +28,11 @@ $color-grey-dark-2: #414345;
 
 html {
   box-sizing: border-box;
-  font-size: 42.5%; }
+  font-size: 42.5%; 
+  
+}
+
+
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -44,7 +48,9 @@ body {
   background-size: cover;
   min-height: 100vh;
   color: #fff;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1.5px; 
+  
+}
 
 .budget {
   margin-top: 10rem;
@@ -54,7 +60,10 @@ body {
   justify-content: center;
   align-items: center;
   width: 80%;
-  margin: 10rem auto 0 auto; }
+  margin: 10rem auto 0 auto; 
+}
+
+
 
 .budget__card {
   display: flex;
@@ -64,9 +73,8 @@ body {
   color: #2a2a2a; }
   @media only screen and (max-width: 70em) {
     .budget__card {
-      flex-direction: column;
-      width: 40%;
-      justify-content: center; } }
+      width: 100%;
+  } }
 
 .bottom {
   margin-top: 6rem; }
@@ -79,9 +87,8 @@ body {
   align-content: center; }
   @media only screen and (max-width: 70em) {
     .add__container {
-      flex-direction: column;
-      align-content: center;
-      width: 70%; } }
+      flex-wrap: wrap;
+    } }
 
 .container {
   display: flex;
@@ -96,7 +103,9 @@ body {
   @media only screen and (max-width: 70em) {
     .budget__trash {
       align-self: center;
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem; 
+      font-size: 5rem;
+    } }
 
 /*****BUDGET*******/
 .budget__head {
@@ -118,6 +127,12 @@ body {
     color: #fff; }
   .budget__head--title {
     font-size: 2rem; }
+
+    @media only screen and (max-width: 70em) {
+      .budget__head {
+        font-size: 2rem;
+     }
+    }
 
 .budget__income,
 .budget__expense {
@@ -180,11 +195,11 @@ body {
 .add__description {
   width: 40%;
   border-bottom: 5px solid var(--color-primary-light-2); }
-  @media only screen and (max-width: 70em) {
+   @media only screen and (max-width: 70em) {
     .add__description {
-      width: 90%;
-      margin-top: 4rem;
-      align-items: center; } }
+      width: 60%;
+       border-bottom: 2px solid var(--color-primary-light-2);
+    } } 
 
 .add__value {
   width: 15%;
@@ -192,8 +207,10 @@ body {
   @media only screen and (max-width: 70em) {
     .add__value {
       margin-top: 3rem;
-      width: 50%;
-      margin-right: 13rem; } }
+      
+      width: 60%;
+      border-bottom: 2px solid var(--color-primary-light-2);
+    } } 
 
 .add__btn {
   background-color: transparent;
@@ -203,10 +220,12 @@ body {
   font-size: 7rem;
   margin-bottom: -2.5rem;
   color: var(--color-primary-light-2); }
-  @media only screen and (max-width: 70em) {
+ @media only screen and (max-width: 70em) {
     .add__btn {
-      margin-top: -3rem;
-      margin-left: 25rem; } }
+      font-size: 5rem;
+    margin-bottom: -4rem; 
+   margin-right: -14rem;
+  } }
 
 .add__container--type {
   position: relative; }
@@ -221,6 +240,42 @@ body {
   border-radius: 20px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent; }
+
+  @media only screen and (max-width: 70em) {
+    .label {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 70em) {
+
+    .label:before {
+      top: 2rem !important;
+      left: 2rem !important;
+      height: 9px !important;
+      width: 28px !important;
+    }
+
+    .label:after {
+    top: 2rem !important;
+    left: 2rem !important;
+    height: 28px !important;
+    width: 9px !important;
+    }
+
+    .input__toggle:checked + .label:before {
+      width: 10px !important;
+      height: 0px !important;
+      background-color: #fff; }
+    .input__toggle:checked + .label:after {
+      height: 10px !important;
+      width: 30px !important;
+      background-color: #fff; }  
+    
+  }
+
   .label:hover {
     box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.1), 0px 9px 15px 0px #405c30; }
   .label:before {
@@ -235,7 +290,7 @@ body {
     background-color: var(--color-primary-light-2);
     border-radius: 3px;
     box-shadow: inset 0px 0px 0px 8px white;
-    z-index: 19; }
+    z-index: 19; } 
   .label:after {
     content: "";
     position: absolute;
@@ -256,14 +311,14 @@ body {
     background-color: #f7717a; }
     .input__toggle:checked + .label:hover {
       box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.1), 0px 9px 15px 0px rgba(247, 113, 122, 0.541176); }
-    .input__toggle:checked + .label:before {
+     .input__toggle:checked + .label:before {
       width: 10px;
       height: 0px;
       background-color: #fff; }
     .input__toggle:checked + .label:after {
       height: 10px;
       width: 40px;
-      background-color: #fff; }
+      background-color: #fff; }  
 
 /* Income /Exepense*/
 .panel {
@@ -273,6 +328,8 @@ body {
   width: 80%;
   margin: 0 auto;
   font-weight: 600; }
+
+
 
 .panel__item {
   background: #93f9b9;
@@ -335,6 +392,12 @@ body {
 .panel__item__income-percentage {
   opacity: 0; }
 
+  @media only screen and (max-width: 70em) {
+    .panel__item__description {
+      margin-right: 2rem; 
+    }
+  }
+
 .panel__item-expense {
   /* background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary)); */
   color: #f7717a; }
@@ -348,3 +411,13 @@ body {
 
 .add__value-red {
   border-bottom: 5px solid #f7717a; }
+
+
+  @media only screen and (max-width: 70em) {
+    .add__description-red {
+      border-bottom: 2px solid #f7717a;
+    }
+
+    .add__value-red {
+      border-bottom: 2px solid #f7717a; }
+  }
