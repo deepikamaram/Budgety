@@ -1,8 +1,9 @@
 # Budgety
 
-This is a Project inspired from Javascript course by Jonas in Udemy
+This is a Project is from Javascript course by Jonas in Udemy
 
 - Re-designed it
+- Completely different UI
 - Added local storage options to delete add and update the dat in local storage
 - Added a button to clear entire data at once from localstorage and UI
 
